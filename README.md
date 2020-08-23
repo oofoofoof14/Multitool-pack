@@ -2,7 +2,7 @@
  This is a multi tool program, not all of it is complete and it has to be worked on alot, Join the discord as it will 
  prompt you just because  there are some issues that need to be fixed. You can also contribute, but you will need to be 
  in the discord.  The program will be translated when finished!
- #Other languages 
+ # Other languages 
  These are not perfect !
 # Japanese: 日本人
 これはマルチツールプログラムであり、すべてが完了しているわけではなく、多くの作業が必要です。不和に参加してください

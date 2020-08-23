@@ -8,25 +8,22 @@ time.sleep(4)
 print(platform.system() + ',' + (platform.release()) + ' ' + 'Detected')
 time.sleep(1)
 print('Detecting ip.')
-        time.sleep(4)
-        print('000.000.000.0' + ' Has been deteced') #still working on it
-        time.sleep(1)
-        print('Checking OS...')
-        time.sleep(4)
-        if platform.system() == 'Linux':
-            print('Linux OS is not a valid os for the tool pack and is getting worked on!')
-            time.sleep(1)
-            a = int(input('Type any number for a surprise! '))
-            if a >= 1:
-                for _ in range(a):
-                    webbrowser.open(url='https://www.youtube.com/watch?v=oHg5SJYRHA0', new=1)
-                time.sleep(3)
-                print("TERMINATING NOW!")
-                time.sleep(5)
-                exit()
-
-
-
+time.sleep(4)
+print('000.000.000.0' + ' Has been deteced') #still working on it
+time.sleep(1)
+print('Checking OS...')
+time.sleep(4)
+if platform.system() == 'Linux':
+    print('Linux OS is not a valid os for the tool pack and is getting worked on!')
+    time.sleep(1)
+    a = int(input('Type any number for a surprise! '))
+    if a >= 1:
+        for _ in range(a):
+            webbrowser.open(url='https://www.youtube.com/watch?v=oHg5SJYRHA0', new=1)
+        time.sleep(3)
+        print("TERMINATING NOW!")
+        time.sleep(5)
+        exit()
 
 usernamepass = input('Username:Password: ')
 time.sleep(4)

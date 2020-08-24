@@ -1,5 +1,5 @@
 
-import uuid, socket, ipaddress, webbrowser, platform, os, time, requests
+import uuid, socket, ipaddress, webbrowser, platform, os, time, requests, random
 from clear_screen import clear
 from random import *
 
@@ -148,21 +148,7 @@ while True:
     time.sleep(.1)
     print('')
     time.sleep(.1)
-    ab = ('search?q=nut&oq=nut&aqs=chrome..69i57.1106j0j7&sourceid=chrome&ie=UTF-8')
-    aba = ('search?q=stupid&oq=stupid&aqs=chrome..69i57j69i61.2619j0j9&sourceid=chrome&ie=UTF-8')
-    abb = ('search?q=idot&oq=idot&aqs=chrome..69i57.2133j0j9&sourceid=chrome&ie=UTF-8')
-    abc = ('search?q=history&oq=history&aqs=chrome..69i57j69i59j69i60.1730j0j7&sourceid=chrome&ie=UTF-8')
-    google_sites = random.choice(
-        [ab + aba + abb + abc])  # add more if you want to just use the end of a google search and remember '' or ""
-    bb = 'https://www.youtube.com/watch?v=i_2yNbIzwOI'
-    bc = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-    bd = 'https://www.youtube.com/watch?v=WXxV9g7lsFE'
-    be = 'https://downloadmoreram.com/download.html'
-    random_sites = random.choice([bb +
-                                  bc +
-                                  bd +
-                                  be
-                                  ])  # add more if u want to
+
     print('  88888             8    888b.           8 ')
     print("    8   .d8b. .d8b. 8    8  .8 .d88 .d8b 8.dP ")
     print("    8   8' .8 8' .8 8    8wwP' 8  8 8    88b  ")
@@ -245,7 +231,28 @@ while True:
                 print(' ')
                 time.sleep(.5)
             print('1. Random google page selected!')
+            select = int(input('Select a number between 1-6: ')) # You can change this and add as many as you want!
+            print('')
             pages = int(input('How Many Tabs: '))
+            if select == 1:
+                google_sites = ('')
+            elif select == 2:
+                google_sites = ('')
+            elif select == 3:
+                google_sites = ('')
+            elif select == 4:
+                google_sites = ('')
+            elif select == 5:
+                google_sites = ('')
+            elif select == 6:
+                google_sites = ('')
+            else:
+                time.sleep(1)
+                print('Wrong Option selected!')
+                time.sleep(1)
+                print('Returning to menu!')
+                time.sleep(1)
+
 
             for _ in range(pages):
                 webbrowser.open(url=('https://www.google.com/' + google_sites), new=1)
@@ -260,7 +267,27 @@ while True:
                 print(' ')
                 time.sleep(.5)
             print('2. Random website selected!')
+            select = int(input('Select a number between 1-6: '))  # You can change this and add as many as you want!
+            print('')
             pages = int(input('How Many Tabs: '))
+            if select == 1:
+                random_sites = ('')
+            elif select == 2:
+                random_sites = ('')
+            elif select == 3:
+                random_sites = ('')
+            elif select == 4:
+                random_sites = ('')
+            elif select == 5:
+                random_sites = ('')
+            elif select == 6:
+                random_sites = ('')
+            else:
+                time.sleep(1)
+                print('Wrong Option selected!')
+                time.sleep(1)
+                print('Returning to menu!')
+                time.sleep(1)
             for _ in range(pages):
                 webbrowser.open(url=random_sites, new=1)
                 time.sleep(1)

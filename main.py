@@ -1,23 +1,24 @@
-
 import uuid, socket, ipaddress, webbrowser, platform, os, time, requests, random, sys
 from clear_screen import clear
 from random import *
-
 #my_ip = ipaddress.ip_address('--0.--0.--0.-0') #Random choices and other shit goes here since it is just cleaner
-
-
-
 print('Tools pack')
 time.sleep(1)
 print('Detecting ip...')
 x = randint(1,4)
 time.sleep(x)
-print('000.000.000.0' + ' Has been deteced') #still working on it
+print('---.---.---.-' + ' Has been detected') #still working on it
 time.sleep(1)
 x = randint(1,4)
 print('Checking OS...')
 time.sleep(x)
-print(platform.system() + ',' + (platform.release()) + ' ' + 'Detected')
+zxc = platform.system()
+if zxc == 'Darwin':
+    abcdef = 'Macosx'
+    print(abcdef + ',' + (platform.release()) + ' ' + 'Detected')
+else:
+    print(platform.system() + ',' + (platform.release()) + ' ' + 'Detected')
+
 time.sleep(1)
 for _ in range(3):
     print('')
@@ -33,79 +34,124 @@ if platform.system() == 'Linux':
         print("TERMINATING NOW!")
         time.sleep(5)
         exit()
-print('')
-print('Paid user login!')
-print('')
-time.sleep(1)
-pastebin = ('https://pastebin.com/raw/scPbt4D4')
-username = input('Username: ')
-time.sleep(1)
-print('')
-password = input('Password: ')
-response = requests.get(pastebin).text
-for line in response.split('\n'):
-  if username and password in line:
-    print('Correct password and username!')
-    time.sleep(1)
-    print('')
-    print('Sharing passwords are a bannable offence and will be removed from the list without refund!')
-    print('')
+inad = input('Have your paid/boost for the Program. Y:paid/Y:boosted/N: ')
+pop = 10
+while pop < 20:
+    if inad == 'Y:paid':
+        print('')
+        print('Paid user login!')
+        print('')
+        time.sleep(1)
+        pastebin = ('https://pastebin.com/raw/scPbt4D4')
+        username = input('Username: ')
+        time.sleep(1)
+        print('')
+        password = input('Password: ')
+        response = requests.get(pastebin).text
+        for line in response.split('\n'):
+            if username and password in line:
+                print('Correct password and username!')
+                time.sleep(1)
+                print('')
+                print('Sharing passwords are a bannable offence and will be removed from the list without refund!')
+                print('')
+                break
+            else:
+               print('Invalid password or username!')
+               exita = input('Would like to re-try? Y/N: ')
+               if (exita.capitalize()) == 'Y':
+                   print('Returning to start!')
+                   time.sleep(1)
+               elif (exita.capitalize()) == 'N':
+                   time.sleep(1)
+                   print('N Selected!')
+                   time.sleep(1)
+               else:
+                   print('Invalid Response!')
+    elif inad == 'Y:boosted':
+        print('')
+        print('Booster user login!')
+        print('')
+        time.sleep(1)
+        pastebin = ('https://pastebin.com/raw/c254wxqt')
+        username = input('Username: ')
+        time.sleep(1)
+        print('')
+        password = input('Password: ')
+        response = requests.get(pastebin).text
+        for line in response.split('\n'):
+            if username and password in line:
+                print('Correct password and username!')
+                time.sleep(1)
+                print('')
+                print('Sharing passwords are a bannable offence and will be removed from the list!')
+                print('')
+                break
+            else:
+               print('Invalid password or username!')
+               exita = input('Would like to re-try? Y/N: ')
+               if (exita.capitalize()) == 'Y':
+                   print('Returning to start!')
+                   time.sleep(1)
+               elif (exita.capitalize()) == 'N':
+                   time.sleep(1)
+                   print('N Selected!')
+                   time.sleep(1)
+               else:
+                   print('Invalid Response!')
+    elif (inad.capitalize()) == 'N':
+        time.sleep(1)
+        i = input('Would you like a uuid? this is required to purchase the full version. Y/N: ')
+        if (i.capitalize()) == 'Y':
+            time.sleep(1)
+            print(uuid.uuid1())
+            time.sleep(1)
+            print('')
+            print('Keep this stored as it will be your password until you request it to get changed!')
+            print('')
+            time.sleep(5)
+        print(
+                'Would you like to join the discord server? You can buy the full version there and also boosters will get more tools!')
+        discord = input('Y/N? ')
+        if (discord.capitalize()) == 'Y':
+            webbrowser.open(url='https://discord.gg/WWWhj9z')
+        break
+    else:
+        time.sleep(1)
+        print('Invalid response!')
+        time.sleep(1)
+        break
 
-#clear() not working atm
-print('Invalid password or username!')
-exita = input('Would like to re-try? Y/N: ')
-if (exita.capitalize()) == 'Y':
-    print('Returning to start!')
-    print('You Need to run the application again!')
-    time.sleep(1)
-    print('TERMINATED')
-    exit()
-time.sleep(1)
-print('N Selected!')
-time.sleep(1)
-print('')
-print('Booster user login!')
-print('')
-time.sleep(1)
-pastebin = ('https://pastebin.com/raw/c254wxqt')
-username = input('Username: ')
-time.sleep(1)
-print('')
-password = input('Password: ')
-response = requests.get(pastebin).text
-for line in response.split('\n'):
-  if username and password in line:
-    print('Correct password and username!')
-    time.sleep(1)
-    print('')
-    print('Sharing passwords are a bannable offence and will be removed from the list!')
-    print('')
-
-#clear() not working atm
-print('Invalid password or username!')
-exita = input('Would like to re-try? Y/N: ')
-if (exita.capitalize()) == 'Y':
-    print('Returning to start!')
-    print('You Need to run the application again!')
-    time.sleep(1)
-    print('TERMINATED')
-    exit()
 print('N Selected!')
 time.sleep(1)
 print('Free version, No booster or paid tools')
 time.sleep(1)
 print('')
+pastebin12 = ('https://pastebin.com/9qNWLYbb')
+kid = 1
+webbrowser.open_new(url='https://bit.ly/3lahict')
+while kid < 2:
+    print('Key Stop 1 & 2!')
+    key1 = input('Key 1: ')
+    key2 = input('Key 2: ')
+    key12 = requests.get(pastebin12).text
+    for line in response.split('\n'):
+        if key12 and key2 in line:
+            print('Keys Are valid')
+            time.sleep(1)
+            print('')
+            print('Thank you for helping support me!')
+            print('')
+            break
+        else:
+            print('Incorrect')
 print('Loading')
-print('')
 x = randint(3,10)
 time.sleep(x)
 print('(##########)100% COMPLETE')
 time.sleep(0.5)
 print('Complete!')
-print('Would you like to join the discord server? You can buy the full version there and also boosters will get more tools!')
-discord = input('Y/N? ')
-if (discord.capitalize()) == 'Y':
-        webbrowser.open(url='https://discord.gg/WWWhj9z')
+
 while True:
     time.sleep(2)
     print('')
@@ -246,10 +292,15 @@ while True:
         print(
             '.............................................................................................................................................................................................')
         print(' ')
+        time.sleep(1)
         print('1. Random Google Page')
+        time.sleep(1)
         print('2. Random Website')
+        time.sleep(1)
         print('3. Selected Website')
+        time.sleep(1)
         print('4. Exit Tool')
+        time.sleep(1)
         c = int(input('Choose Tool: '))
         if c == 1:
             for _ in range(4):
@@ -286,7 +337,7 @@ while True:
             time.sleep(2)
             print('Returning to menu!')
             time.sleep(1)
-            webbrowser.close()
+
         elif c == 2:
             for _ in range(4):
                 print(' ')
@@ -320,7 +371,7 @@ while True:
             time.sleep(2)
             print('Returning to menu!')
             time.sleep(1)
-            webbrowser.close()
+
         elif c == 3:
             for _ in range(4):
                 print(' ')
@@ -335,7 +386,7 @@ while True:
             time.sleep(2)
             print('Returning to menu!')
             time.sleep(1)
-            webbrowser.close()
+
         elif c == 4:
             for _ in range(4):
                 print(' ')

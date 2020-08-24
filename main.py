@@ -235,17 +235,17 @@ while True:
             print('')
             pages = int(input('How Many Tabs: '))
             if select == 1:
-                google_sites = ('')
+                google_sites = ('search?q=nut&oq=nut&aqs=chrome.0.69i59.1970j0j7&sourceid=chrome&ie=UTF-8')
             elif select == 2:
-                google_sites = ('')
+                google_sites = ('search?q=history&oq=his&aqs=chrome.1.69i57j69i59l2j69i61j69i60.2720j0j9&sourceid=chrome&ie=UTF-8')
             elif select == 3:
-                google_sites = ('')
+                google_sites = ('search?q=Yeet&oq=Yeet&aqs=chrome..69i57j69i60j69i65.1465j0j9&sourceid=chrome&ie=UTF-8')
             elif select == 4:
-                google_sites = ('')
+                google_sites = ('search?q=egg&oq=egg&aqs=chrome..69i57.686j0j9&sourceid=chrome&ie=UTF-8')
             elif select == 5:
-                google_sites = ('')
+                google_sites = ('search?q=north+korea&oq=north+korea&aqs=chrome..69i57.2612j0j9&sourceid=chrome&ie=UTF-8')
             elif select == 6:
-                google_sites = ('')
+                google_sites = ('search?q=computer&oq=computer&aqs=chrome..69i57j69i61l2j69i65l2j69i61.1695j0j9&sourceid=chrome&ie=UTF-8')
             else:
                 time.sleep(1)
                 print('Wrong Option selected!')
@@ -271,17 +271,17 @@ while True:
             print('')
             pages = int(input('How Many Tabs: '))
             if select == 1:
-                random_sites = ('')
+                random_sites = ('https://alwaysjudgeabookbyitscover.com/')
             elif select == 2:
-                random_sites = ('')
+                random_sites = ('http://eelslap.com/')
             elif select == 3:
-                random_sites = ('')
+                random_sites = ('https://smashthewalls.com/')
             elif select == 4:
-                random_sites = ('')
+                random_sites = ('https://weirdorconfusing.com/')
             elif select == 5:
-                random_sites = ('')
+                random_sites = ('https://trypap.com/')
             elif select == 6:
-                random_sites = ('')
+                random_sites = ('http://www.republiquedesmangues.fr/')
             else:
                 time.sleep(1)
                 print('Wrong Option selected!')

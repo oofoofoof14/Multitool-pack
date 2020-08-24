@@ -199,15 +199,8 @@ while True:
             print('1. Ip/Sever tester')
             print('2. Ip Stresser')
 
-
-
-
-
-
-
-
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create a TCP/IP socket
-            server_ip = raw_input('Enter server IP : ')
+            server_ip = int(input('Enter server IP : '))
             rep = os.system('ping ' + server_ip)
             if rep == 0:
                 print

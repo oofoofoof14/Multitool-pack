@@ -127,24 +127,24 @@ time.sleep(1)
 print('Free version, No booster or paid tools')
 time.sleep(1)
 print('')
-pastebin12 = ('https://pastebin.com/9qNWLYbb')
-kid = 1
-webbrowser.open_new(url='https://bit.ly/3lahict')
-while kid < 2:
-    print('Key Stop 1 & 2!')
-    key1 = input('Key 1: ')
-    key2 = input('Key 2: ')
-    key12 = requests.get(pastebin12).text
-    for line in response.split('\n'):
-        if key12 and key2 in line:
-            print('Keys Are valid')
-            time.sleep(1)
-            print('')
-            print('Thank you for helping support me!')
-            print('')
-            break
-        else:
-            print('Incorrect')
+#pastebin12 = ('https://pastebin.com/9qNWLYbb')
+#kid = 1
+#webbrowser.open_new(url='https://bit.ly/3lahict')
+#while kid < 2:
+ #   print('Key Stop 1 & 2!')
+  #  key1 = input('Key 1: ')
+   # key2 = input('Key 2: ')
+    #key12 = requests.get(pastebin12).text
+    #for line in key12.split('\n'):
+     #   if key12 and key2 in line:
+      #      print('Keys Are valid')
+       #     time.sleep(1)
+        #    print('')
+         #   print('Thank you for helping support me!')
+          #  print('')
+           # break
+        #else:
+         #   print('Incorrect')
 print('Loading')
 x = randint(3,10)
 time.sleep(x)

@@ -1,5 +1,5 @@
 
-import uuid, socket, ipaddress, webbrowser, platform, os, time, requests, random
+import uuid, socket, ipaddress, webbrowser, platform, os, time, requests, random, sys
 from clear_screen import clear
 from random import *
 
@@ -157,7 +157,7 @@ while True:
     print('By sɹǝƃƃod#5183')
     print('Credit to: zoony#1337 & Dropout#1337')
     print('')
-    print('')
+    print("I am legaly not responsibile for anything that happens to you or your device! ")
     print('')
     time.sleep(1)
     print('1. Pinging tools: ')
@@ -183,6 +183,38 @@ while True:
         time.sleep(0.1)
         for _ in range(15):
             print(' ')
+            print("██▓███   ██▓ ███▄    █   ▄████  ██▓ ███▄    █   ▄████    ▄▄▄█████▓ ▒█████   ▒█████   ██▓      ██████")
+            print("▓██░  ██▒▓██▒ ██ ▀█   █  ██▒ ▀█▒▓██▒ ██ ▀█   █  ██▒ ▀█▒   ▓  ██▒ ▓▒▒██▒  ██▒▒██▒  ██▒▓██▒    ▒██    ▒")
+            print("▓██░ ██▓▒▒██▒▓██  ▀█ ██▒▒██░▄▄▄░▒██▒▓██  ▀█ ██▒▒██░▄▄▄░   ▒ ▓██░ ▒░▒██░  ██▒▒██░  ██▒▒██░    ░ ▓██▄")
+            print("▒██▄█▓▒ ▒░██░▓██▒  ▐▌██▒░▓█  ██▓░██░▓██▒  ▐▌██▒░▓█  ██▓   ░ ▓██▓ ░ ▒██   ██░▒██   ██░▒██░      ▒   ██▒")
+            print("▒██▒ ░  ░░██░▒██░   ▓██░░▒▓███▀▒░██░▒██░   ▓██░░▒▓███▀▒     ▒██▒ ░ ░ ████▓▒░░ ████▓▒░░██████▒▒██████▒▒")
+            print("▒▓▒░ ░  ░░▓  ░ ▒░   ▒ ▒  ░▒   ▒ ░▓  ░ ▒░   ▒ ▒  ░▒   ▒      ▒ ░░   ░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░▓  ░▒ ▒▓▒ ▒ ░")
+            print("░▒ ░      ▒ ░░ ░░   ░ ▒░  ░   ░  ▒ ░░ ░░   ░ ▒░  ░   ░        ░      ░ ▒ ▒░   ░ ▒ ▒░ ░ ░ ▒  ░░ ░▒  ░ ░")
+            print("░░        ▒ ░   ░   ░ ░ ░ ░   ░  ▒ ░   ░   ░ ░ ░ ░   ░      ░      ░ ░ ░ ▒  ░ ░ ░ ▒    ░ ░   ░  ░  ░")
+            print("░           ░       ░  ░           ░       ░                 ░ ░      ░ ░      ░  ░      ░")
+            print('')
+            print('')
+            print('')
+            time.sleep(1)
+            print('1. Ip/Sever tester')
+            print('2. Ip Stresser')
+
+
+
+
+
+
+
+
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create a TCP/IP socket
+            server_ip = raw_input('Enter server IP : ')
+            rep = os.system('ping ' + server_ip)
+            if rep == 0:
+                print
+                'n n server is up n n'
+            else:
+                print
+            'server is down'
 
 
 

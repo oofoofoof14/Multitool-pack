@@ -1,6 +1,11 @@
 import uuid, socket, ipaddress, webbrowser, platform, os, time, requests, random, sys
 from clear_screen import clear
 from random import *
+import json
+from discord import LoginFailure
+from discord.ext import commands
+from os import system, path
+from discord.ext.commands import CommandNotFound
 #my_ip = ipaddress.ip_address('--0.--0.--0.-0') #Random choices and other shit goes here since it is just cleaner
 print('Tools pack')
 time.sleep(1)
@@ -127,24 +132,23 @@ time.sleep(1)
 print('Free version, No booster or paid tools')
 time.sleep(1)
 print('')
-#pastebin12 = ('https://pastebin.com/9qNWLYbb')
-#kid = 1
-#webbrowser.open_new(url='https://bit.ly/3lahict')
-#while kid < 2:
- #   print('Key Stop 1 & 2!')
-  #  key1 = input('Key 1: ')
-   # key2 = input('Key 2: ')
-    #key12 = requests.get(pastebin12).text
-    #for line in key12.split('\n'):
-     #   if key12 and key2 in line:
-      #      print('Keys Are valid')
-       #     time.sleep(1)
-        #    print('')
-         #   print('Thank you for helping support me!')
-          #  print('')
-           # break
-        #else:
-         #   print('Incorrect')
+pastebin12 = ('https://pastebin.com/9qNWLYbb')
+kid = 1
+webbrowser.open_new(url='https://bit.ly/3lahict')
+while kid < 2:
+    print('Key Stop 1 & 2!')
+    key1 = input('Key 1: ')
+    key2 = input('Key 2: ')
+    key12 = requests.get(pastebin12).text
+    for line in key12.split('\n'):
+        if key12 and key2 in line:
+            print('Keys Are valid')
+            time.sleep(1)
+            print('')
+            print('Thank you for helping support me!')
+            print('')
+
+
 print('Loading')
 x = randint(3,10)
 time.sleep(x)
@@ -154,46 +158,9 @@ print('Complete!')
 
 while True:
     time.sleep(2)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
-    print('')
-    time.sleep(.1)
+    for _ in range(40):
+        print(' ')
+        time.sleep(.01)
 
     print('  88888             8    888b.           8 ')
     print("    8   .d8b. .d8b. 8    8  .8 .d88 .d8b 8.dP ")
@@ -254,8 +221,6 @@ while True:
             else:
                 print
             'server is down'
-
-
 
     elif a == 2:
         print('2. Browser history spammer selected!')
@@ -424,13 +389,75 @@ while True:
             time.sleep(1)
 
     elif a == 4:
-        print('4. Discord spammer selected')
+        print('4. Discord Tools selected')
         time.sleep(1)
         print(
             "....................................................................................................")
         time.sleep(0.1)
         for _ in range(15):
             print(' ')
+            time.sleep(.1)
+            print("              dddddddd                                                                                              dddddddd         ")
+            print("              d::::::d  iiii                                                                                        d::::::d              tttt                                            lllllll  ")
+            print("              d::::::d i::::i                                                                                       d::::::d           ttt:::t                                            l:::::l    ")
+            print("              d::::::d  iiii                                                                                        d::::::d           t:::::t                                            l:::::l      ")
+            print("              d:::::d                                                                                               d:::::d            t:::::t                                            l:::::l    ")
+            print("      ddddddddd:::::d iiiiiii     ssssssssss       cccccccccccccccc   ooooooooooo   rrrrr   rrrrrrrrr       ddddddddd:::::d      ttttttt:::::ttttttt       ooooooooooo      ooooooooooo    l::::l     ssssssssss  ")
+            print("     dd::::::::::::::d i:::::i   ss::::::::::s    cc:::::::::::::::c oo:::::::::::oo r::::rrr:::::::::r    dd::::::::::::::d      t:::::::::::::::::t     oo:::::::::::oo  oo:::::::::::oo  l::::l   ss::::::::::s  ")
+            print("    d::::::::::::::::d  i::::i ss:::::::::::::s  c:::::::::::::::::co:::::::::::::::or:::::::::::::::::r  d::::::::::::::::d      t:::::::::::::::::t    o:::::::::::::::oo:::::::::::::::o l::::l ss:::::::::::::s ")
+            print("   d:::::::ddddd:::::d  i::::i s::::::ssss:::::sc:::::::cccccc:::::co:::::ooooo:::::orr::::::rrrrr::::::rd:::::::ddddd:::::d      tttttt:::::::tttttt    o:::::ooooo:::::oo:::::ooooo:::::o l::::l s::::::ssss:::::s ")
+            print("   d::::::d    d:::::d  i::::i  s:::::s  ssssss c::::::c     ccccccco::::o     o::::o r:::::r     r:::::rd::::::d    d:::::d            t:::::t          o::::o     o::::oo::::o     o::::o l::::l  s:::::s  ssssss ")
+            print("   d:::::d     d:::::d  i::::i    s::::::s      c:::::c             o::::o     o::::o r:::::r     rrrrrrrd:::::d     d:::::d            t:::::t          o::::o     o::::oo::::o     o::::o l::::l    s::::::s  ")
+            print("   d:::::d     d:::::d  i::::i       s::::::s   c:::::c             o::::o     o::::o r:::::r            d:::::d     d:::::d            t:::::t          o::::o     o::::oo::::o     o::::o l::::l       s::::::s  ")
+            print("   d:::::d     d:::::d  i::::i ssssss   s:::::s c::::::c     ccccccco::::o     o::::o r:::::r            d:::::d     d:::::d            t:::::t    tttttto::::o     o::::oo::::o     o::::o l::::l ssssss   s:::::s ")
+            print("   d::::::ddddd::::::ddi::::::is:::::ssss::::::sc:::::::cccccc:::::co:::::ooooo:::::o r:::::r            d::::::ddddd::::::dd           t::::::tttt:::::to:::::ooooo:::::oo:::::ooooo:::::ol::::::ls:::::ssss::::::s")
+            print("    d:::::::::::::::::di::::::is::::::::::::::s  c:::::::::::::::::co:::::::::::::::o r:::::r             d:::::::::::::::::d           tt::::::::::::::to:::::::::::::::oo:::::::::::::::ol::::::ls::::::::::::::s ")
+            print("     d:::::::::ddd::::di::::::i s:::::::::::ss    cc:::::::::::::::c oo:::::::::::oo  r:::::r              d:::::::::ddd::::d             tt:::::::::::tt oo:::::::::::oo  oo:::::::::::oo l::::::l s:::::::::::ss  ")
+            print("     ddddddddd   dddddiiiiiiii  sssssssssss        cccccccccccccccc   ooooooooooo    rrrrrrr               ddddddddd   ddddd               ttttttttttt     ooooooooooo      ooooooooooo   llllllll  sssssssssss     ")
+            for _ in range(2):
+                print(' ')
+            print('If You get banned on discord it is not my fault!')
+            print('3 & 4  can result if caught in a ban!')
+            for _ in range(2):
+                print(' ')
+            print('1. Custom discord status')
+            print('2. Text spammer')
+            print('3. Multi message delete')
+            print('4. Token login')
+            ex = int(input('Select A Tool:'))
+            if ex == 1:
+                print(
+                    "....................................................................................................")
+                for _ in range(15):
+                    print(' ')
+            elif ex == 2:
+                print(
+                    "....................................................................................................")
+                for _ in range(15):
+                    print(' ')
+            elif ex == 3:
+                print(
+                    "....................................................................................................")
+                for _ in range(15):
+                    print(' ')
+            elif ex == 4:
+                print('3. Multi message delete selected!')
+                print(
+                    "....................................................................................................")
+                for _ in range(15):
+                    print(' ')
+
+
+            else:
+                time.sleep(1)
+                print(
+                    "....................................................................................................")
+                time.sleep(1)
+                print('Invalid command!')
+                time.sleep(1)
+                print('Returning home!')
+                time.sleep(1)
+
     elif a == 5:
         print('1. Pinging tools selected!')  # gotto work on this
         time.sleep(1)

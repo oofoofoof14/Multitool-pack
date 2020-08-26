@@ -531,31 +531,31 @@ if language == 'English':
                 print('TERMINATED')
                 exit()
 elif language == 'Deutsche':
-    print('Verktygspaket')
+    print('Werkzeugpaket')
     time.sleep(1)
-    print('Detecting ip...')
+    print('IP erkennen ...')
     x = randint(1, 4)
     time.sleep(x)
-    print('---.---.---.-' + ' Has been detected')  # still working on it
+    print('---.---.---.-' + ' Wurde entdeckt')  # still working on it
     time.sleep(1)
     x = randint(1, 4)
-    print('Checking OS...')
+    print('Betriebssystem überprüfen ...')
     time.sleep(x)
     zxc = platform.system()
     if zxc == 'Darwin':
-        abcdef = 'Macosx'
-        print(abcdef + ',' + (platform.release()) + ' ' + 'Detected')
+        abcdef = 'Mac OS X'
+        print(abcdef + ',' + (platform.release()) + ' ' + 'Erkannt')
     else:
-        print(platform.system() + ',' + (platform.release()) + ' ' + 'Detected')
+        print(platform.system() + ',' + (platform.release()) + ' ' + 'Erkannt')
 
     time.sleep(1)
     for _ in range(3):
         print('')
         time.sleep(.1)
     if platform.system() == 'Linux':
-        print('Linux OS is not a valid os for the tool pack and is getting worked on!')
+        print('Linux OS ist kein gültiges Betriebssystem für das Tool Pack und wird gerade bearbeitet!')
         time.sleep(1)
-        a = int(input('Type any number for a surprise! '))
+        a = int(input('Geben Sie eine beliebige Zahl für eine Überraschung ein: '))
         if a >= 1:
             for _ in range(a):
                 webbrowser.open(url='https://www.youtube.com/watch?v=oHg5SJYRHA0', new=1)
@@ -563,32 +563,32 @@ elif language == 'Deutsche':
             print("TERMINATING NOW!")
             time.sleep(5)
             exit()
-    inad = input('Have your paid/boost for the Program. Y:paid/Y:boosted/N: ')
+    inad = input('Lassen Sie sich für das Programm bezahlen / steigern. J:bezahlt/J:verstärkt/N: ')
     pop = 10
     while pop < 20:
-        if inad == 'Y:paid':
+        if inad == 'J:bezahlt':
             print('')
-            print('Paid user login!')
+            print('Bezahlter Benutzer Login!')
             print('')
             time.sleep(1)
             pastebin = ('https://pastebin.com/raw/scPbt4D4')
-            username = input('Username: ')
+            username = input('Nutzername: ')
             time.sleep(1)
             print('')
-            password = input('Password: ')
+            password = input('Passwort: ')
             response = requests.get(pastebin).text
             for line in response.split('\n'):
                 if username and password in line:
-                    print('Correct password and username!')
+                    print('Passwort und Benutzername korrigieren!')
                     time.sleep(1)
                     print('')
-                    print('Sharing passwords are a bannable offence and will be removed from the list without refund!')
+                    print('Das Teilen von Passwörtern ist strafbar und wird ohne Rückerstattung von der Liste gestrichen!')
                     print('')
                     break
                 else:
-                    print('Invalid password or username!')
-                    exita = input('Would like to re-try? Y/N: ')
-                    if (exita.capitalize()) == 'Y':
+                    print('Ungültiges Passwort oder Benutzername!')
+                    exita = input('Möchten Sie es erneut versuchen? J / N:')
+                    if (exita.capitalize()) == 'J':
                         print('Returning to start!')
                         time.sleep(1)
                     elif (exita.capitalize()) == 'N':
@@ -597,28 +597,28 @@ elif language == 'Deutsche':
                         time.sleep(1)
                     else:
                         print('Invalid Response!')
-        elif inad == 'Y:boosted':
+        elif inad == 'J:verstärkt':
             print('')
-            print('Booster user login!')
+            print('Booster Benutzer Login!')
             print('')
             time.sleep(1)
             pastebin = ('https://pastebin.com/raw/c254wxqt')
-            username = input('Username: ')
+            username = input('Nutzername: ')
             time.sleep(1)
             print('')
-            password = input('Password: ')
+            password = input('Passwort: ')
             response = requests.get(pastebin).text
             for line in response.split('\n'):
                 if username and password in line:
-                    print('Correct password and username!')
+                    print('Passwort und Benutzername korrigieren')
                     time.sleep(1)
-                    print('')
-                    print('Sharing passwords are a bannable offence and will be removed from the list!')
+                    print('') #dumb ass german
+                    print('Das Teilen von Passwörtern ist strafbar und wird ohne Rückerstattung von der Liste gestrichen!')
                     print('')
                     break
                 else:
-                    print('Invalid password or username!')
-                    exita = input('Would like to re-try? Y/N: ')
+                    print('Ungültiges Passwort oder Benutzername!')
+                    exita = input('Möchten Sie es erneut versuchen? J / N:')
                     if (exita.capitalize()) == 'Y':
                         print('Returning to start!')
                         time.sleep(1)

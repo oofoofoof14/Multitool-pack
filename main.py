@@ -627,56 +627,56 @@ elif language == 'Deutsche':
                         print('N Selected!')
                         time.sleep(1)
                     else:
-                        print('Invalid Response!')
+                        print('Ungültige Antwort!')
         elif (inad.capitalize()) == 'N':
             time.sleep(1)
-            i = input('Would you like a uuid? this is required to purchase the full version. Y/N: ')
-            if (i.capitalize()) == 'Y':
+            i = input('Möchten Sie eine UUID? Dies ist erforderlich, um die Vollversion zu erwerben. J / N:')
+            if (i.capitalize()) == 'J':
                 time.sleep(1)
                 print(uuid.uuid1())
                 time.sleep(1)
                 print('')
-                print('Keep this stored as it will be your password until you request it to get changed!')
+                print('Bewahren Sie dieses auf, da es Ihr Passwort ist, bis Sie es auffordern, geändert zu werden!')
                 print('')
                 time.sleep(5)
             print(
-                'Would you like to join the discord server? You can buy the full version there and also boosters will get more tools!')
-            discord = input('Y/N? ')
-            if (discord.capitalize()) == 'Y':
+                'Möchten Sie dem Discord-Server beitreten? Sie können dort die Vollversion kaufen und auch Booster erhalten mehr Werkzeuge!')
+            discord = input('J/N? ')
+            if (discord.capitalize()) == 'J':
                 webbrowser.open(url='https://discord.gg/WWWhj9z')
             break
         else:
             time.sleep(1)
-            print('Invalid response!')
+            print('Ungültige Antwort!')
             time.sleep(1)
             break
 
-    print('N Selected!')
+    print('N Ausgewählt!')
     time.sleep(1)
-    print('Free version, No booster or paid tools')
+    print('Kostenlose Version, kein Booster oder kostenpflichtige Tools')
     time.sleep(1)
     print('')
     pastebin12 = ('https://pastebin.com/9qNWLYbb')
     kid = 1
     webbrowser.open_new(url='https://bit.ly/3lahict')
-    print('Key Stop 1 & 2!')
-    key1 = input('Key 1: ')
-    key2 = input('Key 2: ')
+    print('Schlüsselstopp 1 & 2!')
+    key1 = input('Schlüssel 1: ')
+    key2 = input('Schlüssel 2: ')
     key12 = requests.get(pastebin12).text
     for line in key12.split('\n'):
         if key12 and key2 in line:
-            print('Keys Are valid')
+            print('Schlüssel sind gültig')
             time.sleep(1)
             print('')
-            print('Thank you for helping support me!')
+            print('Vielen Dank für Ihre Unterstützung!')
             print('')
         else:
-            print('invalid')
+            print('ungültig')
 
-    print('Loading')
+    print('Wird geladen!')
     x = randint(3, 10)
     time.sleep(x)
-    print('(##########)100% COMPLETE')
+    print('(##########)100% KOMPLETT!')
     time.sleep(0.5)
     print('Complete!')
 

